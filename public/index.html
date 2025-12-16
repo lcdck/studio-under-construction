@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Decker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1920px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .title-image {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .body-image {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            margin-bottom: 60px;
+        }
+
+        .text-container {
+            text-align: center;
+        }
+
+        .headline {
+            font-size: 24px;
+            font-weight: 600;
+            color: #666;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .subtext {
+            font-size: 14px;
+            color: #888;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .headline {
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+
+            .subtext {
+                font-size: 12px;
+            }
+
+            .body-image {
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/images/studio-decker-title.jpg" alt="Studio Decker" class="title-image">
+        <img src="/images/land-rover-body.jpg" alt="Land Rover Series 3 Body" class="body-image">
+        <div class="text-container">
+            <p class="headline">Restoration Underway</p>
+            <p class="subtext">New Site Coming Soon...</p>
+        </div>
+    </div>
+</body>
+</html>
